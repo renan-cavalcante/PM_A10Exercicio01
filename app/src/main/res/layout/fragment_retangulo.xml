@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/retanguloFrag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetanguloFragment">
+
+    <EditText
+        android:id="@+id/etAlturaRet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="@string/altura"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etBaseRet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="@string/base"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="@+id/etAlturaRet"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/etAlturaRet"
+        app:layout_constraintTop_toBottomOf="@+id/etAlturaRet" />
+
+    <Button
+        android:id="@+id/btnCalAreaRet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/calArea"
+        app:layout_constraintStart_toStartOf="@+id/etBaseRet"
+        app:layout_constraintTop_toBottomOf="@+id/etBaseRet" />
+
+    <Button
+        android:id="@+id/btnCalcPerimetroRet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="@string/calPerimetro"
+        app:layout_constraintEnd_toEndOf="@+id/etBaseRet"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnCalAreaRet"
+        app:layout_constraintTop_toBottomOf="@+id/etBaseRet" />
+
+    <TextView
+        android:id="@+id/tvResultadoRet"
+        android:layout_width="200dp"
+        android:layout_height="241dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCalcPerimetroRet" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

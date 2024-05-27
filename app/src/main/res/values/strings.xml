@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cadastrar figuras geometricas</string>
+    <string name="circulo">Circulo</string>
+    <string name="retangulo">Retangulo</string>
+    <string name="calArea">Area</string>
+    <string name="calPerimetro">Perimetro</string>
+    <string name="altura">Altura:</string>
+    <string name="base">Base:</string>
+    <string name="raio">Raio:</string>
+</resources>

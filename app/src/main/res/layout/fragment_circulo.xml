@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cirucloFra"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RetanguloFragment$CirculoFragment">
+
+    <EditText
+        android:id="@+id/etRaioCir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="112dp"
+        android:ems="10"
+        android:hint="@string/raio"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCalAreaCir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/calArea"
+        app:layout_constraintStart_toStartOf="@+id/etRaioCir"
+        app:layout_constraintTop_toBottomOf="@+id/etRaioCir" />
+
+    <Button
+        android:id="@+id/btnCalPerimetroCir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="68dp"
+        android:text="@string/calPerimetro"
+        app:layout_constraintEnd_toEndOf="@+id/etRaioCir"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnCalAreaCir"
+        app:layout_constraintTop_toBottomOf="@+id/etRaioCir" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="203dp"
+        android:layout_height="204dp"
+        android:layout_marginTop="228dp"
+        app:layout_constraintEnd_toEndOf="@+id/btnCalPerimetroCir"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="@+id/btnCalAreaCir"
+        app:layout_constraintTop_toBottomOf="@+id/etRaioCir" />
+</androidx.constraintlayout.widget.ConstraintLayout>
